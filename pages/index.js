@@ -1,16 +1,20 @@
 
+// next
+//import dynamic from 'next/dynamic';
+
 // css
 import './css/index.css';
 
 // assets
-import Mountain from './assets/img/mountain.jpg';
-import Coast from './assets/img/coast.jpg';
-import Hero from './assets/img/hero.jpg';
-import Island from './assets/img/island.jpg';
-import Balloon from './assets/img/balloon.jpg';
+import Mountain from './assets/img/mountain.webp';
+import Coast from './assets/img/coast.webp';
+import Hero from './assets/img/hero.webp';
+import Island from './assets/img/island.webp';
+import Balloon from './assets/img/balloon.webp';
 
 // components
 import { Button } from "react-bulma-components";
+// const Button = dynamic(import("react-bulma-components"));
 
 // main
 export default function Index() {
