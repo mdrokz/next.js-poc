@@ -1,11 +1,18 @@
+
+// css
 import './css/index.css';
+
+// assets
 import Mountain from './assets/img/mountain.jpg';
 import Coast from './assets/img/coast.jpg';
 import Hero from './assets/img/hero.jpg';
 import Island from './assets/img/island.jpg';
 import Balloon from './assets/img/balloon.jpg';
+
+// components
 import { Button } from "react-bulma-components";
 
+// main
 export default function Index() {
     return (
         <>
