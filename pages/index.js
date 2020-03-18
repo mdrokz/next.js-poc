@@ -1,9 +1,11 @@
 
 // next
-//import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
+
+import Link from 'next/link';
 
 // css
-import './css/index.css';
+import './css/index.scss';
 
 // assets
 import Mountain from './assets/img/mountain.webp';
@@ -13,7 +15,8 @@ import Island from './assets/img/island.webp';
 import Balloon from './assets/img/balloon.webp';
 
 // components
-import { Button } from "react-bulma-components";
+import {Button} from "react-bulma-components/dist";
+import modules from '../modules';
 // const Button = dynamic(import("react-bulma-components"));
 
 // main
@@ -23,10 +26,15 @@ export default function Index() {
     <header>
       <h2><a href="#">Website Logo</a></h2>
       <nav>
-        <li><a href="#">Home</a></li>
+        {modules.map(module => (
+          <li key={module.name}>
+            <Link href={module.routeInfo.path}>{module.name}</Link>
+          </li>
+        ))}
+        {/* <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Contacts</a></li> */}
       </nav>
     </header>
 
