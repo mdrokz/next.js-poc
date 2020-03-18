@@ -1,7 +1,6 @@
 
 // next
-import dynamic from 'next/dynamic';
-
+//import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
 // css
@@ -15,13 +14,14 @@ import Island from './assets/img/island.webp';
 import Balloon from './assets/img/balloon.webp';
 
 // components
-import {Button} from "react-bulma-components/dist";
+import {Button} from "bloomer";
 import modules from '../modules';
 // const Button = dynamic(import("react-bulma-components"));
 
+
 // main
 export default function Index() {
-    return (
+    return ( 
         <>
     <header>
       <h2><a href="#">Website Logo</a></h2>
